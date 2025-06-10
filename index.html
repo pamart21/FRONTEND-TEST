@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>La Libreria</title> 
+    
+</head>
+<body>
+
+  
+<!--barra de navegacion -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-color">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><strong>La Libreria</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Nuevos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Usados</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Por Genero</a>
+          <ul class= "dropdown-menu">
+            <li><a class="dropdown-item" href="#" >Terror</a></li>
+            <li> <a class="dropdown-item" href="#">Fantasia</a></li>
+            <li><a class="dropdown-item" href="#">Thriller</a> </li>
+            <li> <a class="dropdown-item" href="#">Historia</a></li>
+            <li> <a class="dropdown-item" href="#">Ciencia</a></li>
+            <li> <a class="dropdown-item" href="#">Romance</a></li>
+            <li> <a class="dropdown-item" href="#">Biografias</a></li>
+            </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+        <button class="btn btn-buscar" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--carusel de imagenes -->
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/Imagenes/pexels-designecologist-15269524.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Biografías </h5>
+        <p>Lo último en biografías de tus artistas favoritos</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/Imagenes/pexels-lina-1741230.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Cuentos infantiles</h5>
+        <p>Encuentra una nueva sección con libros para niños de todas las edades</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/Imagenes/pexels-readymade-3847645.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>J.D SALINGER llegó a la Libreria</h5>
+        <p>Encuentra toda su colección AQUI!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/Imagenes/pexels-yankrukov-8613089.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Evento de lectura en vivo</h5>
+        <p>Conoce los detalles del proximo autor y libro elegidos</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+
+<!--tarjetas-->
+<div class="container my-5">
+  <div class="tarjetas-container row justify-content-center">
+      <div class="card card-custom mb-3" style="max-width: 540px;">
+      <span class="border-light mb-3" style="max-width: 18rem;"></span>
+       <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/Imagenes/tarjetas/41791.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Recien agregado</h5>
+        <p class="card-text">Las crónicas de Narnia</p>
+        <p class="card-text"><small class="text-body-secondary"><a href="https://es.wikipedia.org/wiki/Las_Cr%C3%B3nicas_de_Narnia"> Comprar </a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card card-custom mb-3" style="max-width: 540px;">
+  <span class="border-light mb-3" style="max-width: 18rem;"></span>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/Imagenes/tarjetas/81egAG-WDjL._AC_UF1000,1000_QL80_.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Recien agregado</h5>
+        <p class="card-text">Déjate tentar por la edición especial y limitada de la nueva serie Pecados de Ana Huang.</p>
+        <p class="card-text"><small class="text-body-secondary"><a href="https://twistedseries.fandom.com/wiki/Kings_of_Sin"> Comprar </a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card card-custom mb-3" style="max-width: 540px;">
+  <span class="border-light mb-3" style="max-width: 18rem;"></span>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/Imagenes/tarjetas/OtherMissBridgerton-339x500.jpeg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Recien agregado</h5>
+        <p class="card-text">LA OTRA MISS BRIDGERTON (SERIE ROKESBY 3) (PRECUELA DE LA SERIE B RIDGERTON).</p>
+        <p class="card-text"><small class="text-body-secondary">
+         <a href="https://books.google.com.co/books/about/La_otra_Miss_Bridgerton.html?id=be7GEAAAQBAJ&source=kp_book_description&redir_esc=y"> Comprar </a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card card-custom mb-3" style="max-width: 540px;">
+  <span class="border-light mb-3" style="max-width: 18rem;"></span>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/Imagenes/tarjetas/jane-austen-9781607108757_hr.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Recien agregado</h5>
+        <p class="card-text">Si disfrutas de la lectura de la brillante autora Jane Austen, esta colección es para ti, incluye los libros: Orgullo y prejuicio, Emma, Persuasión, Sensatez y sentimiento.</p>
+        <p class="card-text"><small class="text-body-secondary"><a href="https://es.wikipedia.org/wiki/Jane_Austen"> Comprar </a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<!--hasta aqui llegan las tarjetas-->
+
+<!-- footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+<!-- primera columna -->
+      <div class="col-md-6 text-center">
+<br><br><br>
+<h5><strong>El lugar que reune todas tus historias favoritas</strong></h5>  
+      </div>
+<!-- segunda columna -->
+      <div class="col-md-4">
+<br>
+<h6><strong>Contacto</strong> </h6>
+<p>cll 83 # 100-23, Tunja (Colombia)</p>
+<p>telefono (+57) 3001111111</p>
+
+      </div>
+<!-- tercera columna -->
+       <div class="col-md-2">
+<br>
+<h6><strong>Redes Sociales</strong> </h6>
+<ul class="list-unstyled d-flex flex-column gap-2">
+  <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> lalibreria </a></li>
+  <li><a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i> la libreria </a></li>
+  <li><a href="https://x.com/?lang=es"><i class="fa-brands fa-x-twitter"></i> la_libreria </a></li>
+
+</ul>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+  <script src="/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
